@@ -1,0 +1,168 @@
+:root{
+--var-black: #0c323d;
+--var-white: #ffffff;
+--var-orange: #ff9a3c; 
+--var-dark-blue: #15548f;
+--font-Reddit: "Reddit Mono", monospace;
+--font-Sad: "Edu TAS Beginner", cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------------------- HEADER -------------------- */
+
+header{
+    background-color: red;
+}
+
+nav{
+    background-color: var(--var-black);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 200px 20px 200px;
+}
+
+nav .song{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--font-Reddit);
+    color: var(--var-white);
+}
+
+nav .song:hover{
+    color: var(--var-orange);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* ---------------------- MAIN-------------------- */
+
+main{
+    position: relative;
+    background-image: url(background.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    text-align: center
+}
+
+main::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------------------- MAIN - LEFT DIV -------------------- */
+
+main .left{
+    width: 50%;
+    height: 650px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+main .left h1,h2{
+    color: var(--var-orange);
+}
+
+main .left p{
+    color: white;
+    opacity: 0.8;
+    font-weight: lighter;
+    position: relative;
+    font-size: 2em;
+}
+
+.sad{
+    color: var(--var-dark-blue);
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.energy{
+    color: var(--var-orange);
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+
+/* Scrollbar style */
+.left::-webkit-scrollbar {
+    width: 12px;
+}
+
+.left::-webkit-scrollbar-track {
+    background: var(--var-dark-blue);
+}
+
+.left::-webkit-scrollbar-thumb {
+    background: var(--var-orange);
+    border-radius: 6px;
+}
+
+.left::-webkit-scrollbar-thumb:hover {
+    background: var(--var-red);
+}
+
+/* ---------------------- MAIN - RIGHT DIV -------------------- */
+
+main .right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+main .right p{
+    color: white;
+}
+
+/* ---------------------- FOOTER -------------------- */
+
+footer{
+    background-color: var(--var-black);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+}
+
+footer span{
+    color: white;
+    right: 0;
+    padding: 10px;
+}
+
+/*p:first-child{
+    color: var(--var-red);
+    font-family: "Reddit Mono", monospace;
+}
+
+p:nth-child(4){
+    color: var(--var-yellow);
+    font-family: "Reddit Mono", monospace;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+p:nth-child(3){
+    font-family: "Edu TAS Beginner", cursive;
+    font-weight: 400;
+    color: var(--var-dark-blue);
+}*/
+
