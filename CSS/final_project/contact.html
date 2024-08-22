@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page to showcase Nintendo Switch">
+    <meta name="author" content="Pamela Alves Musialak, Rachael Lawal, Esteban Salazar Correa, Juan David Angarita Pardo">
+    <meta name="keywords" content="Nintendo Switch, gaming console, video games, gaming, gaming accessories">
+    <link rel="icon" href="images/icon.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" class="logo">
+                        <div class="images">
+                            <img src="./images/logo.png" alt="Nintendo">
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html" class="nav-link">Overview</a>
+                </li>
+
+                <li>
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+
+                <li>
+                    <a href="products.html" class="nav-link">Products</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <main>
+        <section class="contact">
+            <div class="container">
+                <div class="left">
+                    <div class="form-wrapper">
+                        <div class="contact-heading">
+                            <h1>Let's work together<span>.</span></h1>
+                            <p class="text">Or reach us via : <a href="mailto:GenericMail@gmail.com">GenericMail@gmail.com</a></p>
+                        </div>
+
+                        <form action="index.html" method="post" class="contact-form">
+                            <div class="input-wrap">
+                                <input class="contact-input" autocomplete="off" name="First Name" type="text" required>   
+                                <label>First Name</label>
+                                <i class="icon fa-solid fa-address-card"></i>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input class="contact-input" autocomplete="off" name="Last Name" type="text" required>   
+                                <label>Last Name</label>
+                                <i class="icon fa-solid fa-address-card"></i>
+                            </div>
+
+                            <div class="input-wrap w-100">
+                                <input class="contact-input" autocomplete="off" name="Email" type="email" required>   
+                                <label>Email</label>
+                                <i class="icon fa-solid fa-envelope"></i>
+                            </div>
+
+                            <div class="input-wrap textarea w-100">
+                                <textarea name="Message" auto-complete="off" class="contact-input" required></textarea>
+                                <label>Message</label>
+                                <i class="icon fa-solid fa-inbox"></i>
+                            </div>
+
+                            <div class="contact-buttons">
+                                <button class="btn upload">
+                                    <span>
+                                        <i class="fa-solid fa-paperclip"></i>Add attachement
+                                    </span>
+                                    <input type="file" name="attachement">
+                                </button>
+                                <input type="submit" value="Send message" class="btn">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="right">
+                    <div class="image-wrapper">
+                        <img src="./images/n1.webp" alt="switch" class="img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer >
+        <div class="footer-text">
+            Nintendo Switch ® All Rights Reserved
+        </div>
+        <div class="footer-images">
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+    <script src="./js/contact.js"></script>
+</body>
+</html>

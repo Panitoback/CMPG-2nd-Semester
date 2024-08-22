@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(to bottom, #ffeb3b, #ff0b0b);
+    color: #333;
+}
+
+/* Header Styles */
+header {
+  font-family: 'Great Vibes', cursive;
+  background: linear-gradient(to bottom, #d32f2f, #ff8400);
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero img:hover {
+  transform: scale(1.1) rotate(5deg); 
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.content article h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.content article p {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+.content article img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.content article img:hover {
+  transform: scale(1.1) rotate(-5deg); 
+}
+
+  
+  /* Footer Styles */
+  
+  footer {
+    font-family: 'Montserrat', sans-serif;
+    background-color:#8B4513;
+    padding: 2em;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+
+  .footer-content > * {
+    flex-basis: 30%;
+    margin: 1em;
+  }
+  
+  .company-info {
+    text-align: center;
+  }
+  
+  .company-info h3 {
+    margin-top: 0;
+  }
+  
+  .contact-form {
+    text-align: left;
+  }
+  
+  .contact-form h3 {
+    margin-top: 0;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  
+  .contact-form input,.contact-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-form button[type="submit"] {
+    background-color: #696969;
+    color: #fff;
+    width: 100%;
+    padding: 0.5em 1em;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .contact-form button[type="submit"]:hover {
+    background-color: rgb(204, 58, 13);
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  }
+
+@media (max-width: 600px) {
+  .hero img {
+    max-width: 300px;
+  }
+  .content article img {
+    max-width: 200px;
+  }
+}
+
+
+  
